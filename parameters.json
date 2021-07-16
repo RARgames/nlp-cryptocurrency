@@ -1,0 +1,23 @@
+{
+    "inputs_path": "data/final_twitter.csv",
+    "results_path": "data",
+    "embeddings_path": "data/embeddings/glove.6B.100d.txt",
+    "embeddings_dim": 100,
+    "test_size": 0.15,
+    "use_wieghts": true,
+    "batch_size": 32,
+    "series_input_width": 50,
+    "txt_window_width": 5,
+    "hours_window": 6,
+    "epochs": 1,
+    "shuffle": true,
+    "early_stopping_min_delta": 1e-3,
+    "early_stopping_patience": 2,
+    "text_max_features": 10000,
+    "text_sequence_length": 20 ,
+    "categories": 3,
+    "model_fn": "create_model_gru",
+    "model_name": "double_input_gru",
+    "optimizer": "adam",
+    "loss": "categorical_crossentropy"
+}
